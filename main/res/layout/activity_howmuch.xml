@@ -7,68 +7,141 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_margin="10dp"
-        android:background="#dbfaf1">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="40sp"
-            android:text="How Much"
-            android:layout_marginBottom="30dp"
-            android:layout_gravity="center_horizontal"/>
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:layout_marginBottom="5dp"
-            android:text="Enter your Birth Date"/>
-
-    <DatePicker
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/datePicker"
-            android:layout_marginBottom="5dp"/>
+            android:gravity="center_horizontal"
+            android:textSize="36sp"
+            android:layout_marginTop="25dp"
+            android:text="Enter Your Birthdate"/>
 
-
-    <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:layout_marginBottom="5dp"
-            android:text="Enter your Height" />
+            android:orientation="horizontal">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:layout_marginBottom="10dp"
-        android:id="@+id/editheight" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:layout_marginLeft="50dp"
+                android:text="Date"/>
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="center_horizontal"
+                android:hint="dd"
+                android:inputType="number"/>
+        </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:layout_marginBottom="5dp"
-        android:text="Enter your Weight" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/editweight"
-        android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textSize="26sp"
+                android:text="Month"/>
+            <EditText
+                android:id="@+id/month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="center_horizontal"
+                android:hint="mm"
+                android:inputType="number"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textSize="26sp"
+                android:text="Year"/>
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:hint="yyyy"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:text="Enter your Height"/>
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:hint="in cm"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:text="Enter your Weight"/>
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:hint="in kg"
+                android:inputType="number"/>
+
+        </LinearLayout>
 
         <Button
-            android:id="@+id/btnmain"
-            android:layout_width="match_parent"
+            android:onClick="changeActivity"
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CALCULATE"
-            android:background="@android:color/transparent"/>
+            android:layout_marginTop="60dp"
+            android:textColor="#fff"
+            android:text="Calculate"
+            android:textSize="20sp"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
 </ScrollView>
