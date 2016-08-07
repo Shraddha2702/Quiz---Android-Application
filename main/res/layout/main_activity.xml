@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@mipmap/sf">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Quizes"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="#420a8b"
+            android:fontFamily="monospace" />
+
+        <Button
+            android:id="@+id/btncomp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computer"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#420a8b"
+            android:fontFamily="monospace"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/btnent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entertainment"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#420a8b"
+            android:fontFamily="monospace"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/btngk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General Knowledge"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#420a8b"
+            android:fontFamily="monospace"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/btnmean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guess the Meaning"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#420a8b"
+            android:fontFamily="monospace"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/btncap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Countries and Capitals"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#420a8b"
+            android:fontFamily="monospace"
+            android:background="@android:color/transparent"/>
+
+
+    </LinearLayout>
